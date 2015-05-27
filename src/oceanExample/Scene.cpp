@@ -170,12 +170,12 @@ void Scene::build(
             _oceanScene->setUnderwaterAttenuation( _underwaterAttenuations[_sceneType] );
 
             _oceanScene->setSunDirection( sunDir );
-            _oceanScene->enableGodRays(true);
+            _oceanScene->enableGodRays(false);
             _oceanScene->enableSilt(true);
-            _oceanScene->enableUnderwaterDOF(true);
+            _oceanScene->enableUnderwaterDOF(false);
             _oceanScene->enableUnderwaterScattering(true);
             _oceanScene->enableDistortion(true);
-            _oceanScene->enableGlare(true);
+            _oceanScene->enableGlare(false);
             _oceanScene->setGlareAttenuation(0.8f);
 
             // create sky dome and add to ocean scene
