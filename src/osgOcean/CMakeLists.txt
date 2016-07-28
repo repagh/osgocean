@@ -157,4 +157,4 @@ INSTALL(
 
 configure_file(osgOcean.pc.in osgOcean.pc @ONLY)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/osgOcean.pc
-    DESTINATION lib/pkgconfig)
+    DESTINATION lib${LIB_SUFFIX}/pkgconfig)
