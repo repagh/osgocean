@@ -106,32 +106,32 @@ INSTALL(
 
 INSTALL(
   FILES ${SKYBOX_TEXTURES_1}
-  DESTINATION ${CMAKE_INSTALL_PREFIX}/bin/resources/textures/sky_clear
+  DESTINATION ${CMAKE_INSTALL_PREFIX}/share/osgOcean/resources/textures/sky_clear
 )
 
 INSTALL(
   FILES ${SKYBOX_TEXTURES_2}
-  DESTINATION ${CMAKE_INSTALL_PREFIX}/bin/resources/textures/sky_dusk
+  DESTINATION ${CMAKE_INSTALL_PREFIX}/share/osgOcean/resources/textures/sky_dusk
 )
 
 INSTALL(
   FILES ${SKYBOX_TEXTURES_3}
-  DESTINATION ${CMAKE_INSTALL_PREFIX}/bin/resources/textures/sky_fair_cloudy
+  DESTINATION ${CMAKE_INSTALL_PREFIX}/share/osgOcean/resources/textures/sky_fair_cloudy
 )
 
 INSTALL(
   FILES ${EXAMPLE_SHADERS}
-  DESTINATION ${CMAKE_INSTALL_PREFIX}/bin/resources/shaders
+  DESTINATION ${CMAKE_INSTALL_PREFIX}/share/osgOcean/resources/shaders
 )
 
 INSTALL(
   FILES ${ISLAND_RESOURCES}
-  DESTINATION ${CMAKE_INSTALL_PREFIX}/bin/resources/island
+  DESTINATION ${CMAKE_INSTALL_PREFIX}/share/osgOcean/resources/island
 )
 
 INSTALL(
   FILES ${BOAT_RESOURCES}
-  DESTINATION ${CMAKE_INSTALL_PREFIX}/bin/resources/boat
+  DESTINATION ${CMAKE_INSTALL_PREFIX}/share/osgOcean/resources/boat
 )
 
 
