@@ -20,6 +20,7 @@
 #include <osgOcean/FFTOceanTechnique>
 
 #include <osg/Depth>
+#include <osg/Version>
 
 using namespace osgOcean;
 
