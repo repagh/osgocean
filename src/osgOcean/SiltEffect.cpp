@@ -26,6 +26,7 @@
 #include <osg/io_utils>
 #include <osg/Timer>
 #include <osg/Version>
+#include <osg/GLExtensions>
 
 using namespace osgOcean;
 
@@ -648,8 +649,12 @@ void SiltEffect::SiltDrawable::drawImplementation(osg::RenderInfo& renderInfo) c
 {
     if (!_geometry) return;
 
+#if OSG_VERSION_LESS_THAN(3,3,4)
     const osg::Geometry::Extensions* extensions = osg::Geometry::getExtensions(renderInfo.getContextID(),true);
-
+#else
+    osg::GLExtensions *extensions = renderInfo.getState()->get<osg::GLExtensions>();
+#endif
+    
     glPushMatrix();
 
     typedef std::vector<const CellMatrixMap::value_type*> DepthMatrixStartTimeVector;
